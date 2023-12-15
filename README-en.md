@@ -1,6 +1,6 @@
 🐐 GEITje 7B: A Large Open Dutch Language Model
 ===============================================
-[📄 Dutch README](./README.md) | 🤖️ [GEITje-chat demo](https://huggingface.co/spaces/Rijgersberg/GEITje-7B-chat)️
+[📄 Dutch README](https://github.com/Rijgersberg/GEITje) | 🤖️ [GEITje-chat demo](https://huggingface.co/spaces/Rijgersberg/GEITje-7B-chat)️
 
 GEITje is a large open Dutch language model with 7 billion parameters, based on Mistral 7B.
 It has been further trained on 10 billion tokens of Dutch text.
