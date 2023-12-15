@@ -1,0 +1,37 @@
+{
+  "results": {
+    "arc_nl": {
+      "acc": 0.41402908468776733,
+      "acc_stderr": 0.014412258199339594,
+      "acc_norm": 0.4234388366124893,
+      "acc_norm_stderr": 0.014457613658173296
+    },
+    "hellaswag_nl": {
+      "acc": 0.5087965461413924,
+      "acc_stderr": 0.005194018713351346,
+      "acc_norm": 0.6622773880194279,
+      "acc_norm_stderr": 0.004913610873856783
+    },
+    "mmlu_nl": {
+      "acc": 0.3885558169537831,
+      "acc_stderr": 0.004246325906307992,
+      "acc_norm": 0.3374819761706003,
+      "acc_norm_stderr": 0.004119384661410243
+    }
+  },
+  "versions": {
+    "arc_nl": 0,
+    "hellaswag_nl": 1,
+    "mmlu_nl": 0
+  },
+  "config": {
+    "model": "hf-causal",
+    "model_args": "pretrained=Rijgersberg/GEITje-7B-chat",
+    "batch_size": 8,
+    "device": "cuda:0",
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

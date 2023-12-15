@@ -1,0 +1,23 @@
+{
+  "results": {
+    "truthfulqa_nl": {
+      "mc1": 0.3070063694267516,
+      "mc1_stderr": 0.016473287690821927,
+      "mc2": 0.4322905748197067,
+      "mc2_stderr": 0.01494242969299146
+    }
+  },
+  "versions": {
+    "truthfulqa_nl": 1
+  },
+  "config": {
+    "model": "hf-causal",
+    "model_args": "pretrained=BramVanroy/Llama-2-13b-chat-dutch",
+    "batch_size": 4,
+    "device": "cuda:0",
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "results": {
+    "truthfulqa_nl": {
+      "mc1": 0.2802547770700637,
+      "mc1_stderr": 0.016040129721386853,
+      "mc2": 0.46977468964185176,
+      "mc2_stderr": 0.015487910155109166
+    }
+  },
+  "versions": {
+    "truthfulqa_nl": 1
+  },
+  "config": {
+    "model": "hf-causal",
+    "model_args": "pretrained=Rijgersberg/GEITje-7B-chat",
+    "batch_size": 8,
+    "device": "cuda:0",
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

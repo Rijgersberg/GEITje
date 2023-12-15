@@ -1,0 +1,16 @@
+accelerate @ git+https://github.com/huggingface/accelerate.git
+bitsandbytes
+datasets
+flash-attn @ git+https://github.com/Dao-AILab/flash-attention.git
+more-itertools
+optimum
+protobuf
+sentencepiece
+scipy
+tensorboard
+transformers @ git+https://github.com/huggingface/transformers.git
+torch
+wandb
+openai
+tiktoken
+trl

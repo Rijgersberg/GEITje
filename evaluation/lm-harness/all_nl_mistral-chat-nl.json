@@ -1,0 +1,43 @@
+{
+  "results": {
+    "arc_nl": {
+      "acc": 0.41916167664670656,
+      "acc_stderr": 0.01443766613132885,
+      "acc_norm": 0.42429426860564584,
+      "acc_norm_stderr": 0.014461469894231062
+    },
+    "hellaswag_nl": {
+      "acc": 0.4805180787911495,
+      "acc_stderr": 0.005190877879841623,
+      "acc_norm": 0.6252563410685376,
+      "acc_norm_stderr": 0.005029177057132724
+    },
+    "mmlu_nl": {
+      "acc": 0.4353039386810351,
+      "acc_stderr": 0.00431928523344822,
+      "acc_norm": 0.370190483418077,
+      "acc_norm_stderr": 0.0042065440514829034
+    },
+    "truthfulqa_nl": {
+      "mc1": 0.3273885350318471,
+      "mc1_stderr": 0.016759298445631017,
+      "mc2": 0.49338805581533035,
+      "mc2_stderr": 0.015437029772851956
+    }
+  },
+  "versions": {
+    "arc_nl": 0,
+    "hellaswag_nl": 1,
+    "mmlu_nl": 0,
+    "truthfulqa_nl": 1
+  },
+  "config": {
+    "model": "hf-causal",
+    "model_args": "pretrained=Rijgersberg/Mistral-7B-v0.1-chat-nl",
+    "batch_size": 8,
+    "device": "cuda:0",
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }

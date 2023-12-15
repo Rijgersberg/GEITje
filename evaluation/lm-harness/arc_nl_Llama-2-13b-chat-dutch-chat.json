@@ -1,0 +1,23 @@
+{
+  "results": {
+    "arc_nl": {
+      "acc": 0.4174508126603935,
+      "acc_stderr": 0.014429375469140367,
+      "acc_norm": 0.3917878528656972,
+      "acc_norm_stderr": 0.014283400270889503
+    }
+  },
+  "versions": {
+    "arc_nl": 0
+  },
+  "config": {
+    "model": "hf-causal",
+    "model_args": "pretrained=BramVanroy/Llama-2-13b-chat-dutch",
+    "batch_size": 4,
+    "device": "cuda:0",
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

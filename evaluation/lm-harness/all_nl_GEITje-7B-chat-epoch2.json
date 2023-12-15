@@ -1,0 +1,44 @@
+{
+  "results": {
+    "arc_nl": {
+      "acc": 0.397775876817793,
+      "acc_stderr": 0.014321116361349048,
+      "acc_norm": 0.41317365269461076,
+      "acc_norm_stderr": 0.014407866995057477
+    },
+    "hellaswag_nl": {
+      "acc": 0.5025364274150027,
+      "acc_stderr": 0.005194755876430951,
+      "acc_norm": 0.6568807339449542,
+      "acc_norm_stderr": 0.0049324937215503035
+    },
+    "mmlu_nl": {
+      "acc": 0.38627912271381953,
+      "acc_stderr": 0.004241742237127587,
+      "acc_norm": 0.3351293921226379,
+      "acc_norm_stderr": 0.004112283370425706
+    },
+    "truthfulqa_nl": {
+      "mc1": 0.28152866242038216,
+      "mc1_stderr": 0.016062309899461683,
+      "mc2": 0.4635704665716658,
+      "mc2_stderr": 0.015183171459904894
+    }
+  },
+  "versions": {
+    "arc_nl": 0,
+    "hellaswag_nl": 1,
+    "mmlu_nl": 0,
+    "truthfulqa_nl": 1
+  },
+  "config": {
+    "model": "hf-causal",
+    "model_args": "pretrained=Rijgersberg/GEITje-7B-chat-epoch2",
+    "batch_size": 8,
+    "device": "cuda:0",
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
