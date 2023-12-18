@@ -54,11 +54,11 @@ They can follow instructions, answer questions, and hold dialogues on a variety 
 
 ### Variants
 
-| Model       | Version | Parameters | Type         | Link to 🤗 Hugging Face Models                                                                                                                          | Based on                                                            |
-|-------------|---------|------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| GEITje      | v1      | 7B         | _foundation_ | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)                                                                                               | [Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1) |
-| GEITje-chat | v1      | 7B         | _chat_       | [GEITje-7B-chat](https://huggingface.co/Rijgersberg/GEITje-7B-chat) <br><small>([gguf](https://huggingface.co/Rijgersberg/GEITje-7B-chat-gguf))</small> | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
-|             | v2      | 7B         | _chat_       | [GEITje-7B-chat-v2](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2)                                                                               | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
+| Model       | Version | Parameters | Type         | Link to 🤗 Hugging Face Models                                                                                                                                   | Based on                                                            |
+|-------------|---------|------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| GEITje      | v1      | 7B         | _foundation_ | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)                                                                                                        | [Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1) |
+| GEITje-chat | v1      | 7B         | _chat_       | [GEITje-7B-chat](https://huggingface.co/Rijgersberg/GEITje-7B-chat) <br><small>([gguf](https://huggingface.co/Rijgersberg/GEITje-7B-chat-gguf))</small>          | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
+|             | v2      | 7B         | _chat_       | [GEITje-7B-chat-v2](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2) <br><small>([gguf](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2-gguf))</small> | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
 
 
 🚀 Usage
