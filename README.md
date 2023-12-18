@@ -1,13 +1,13 @@
 🐐 GEITje 7B: een groot open Nederlands taalmodel
 =================================================
-[📄 English README](./README-en.md) | 🤖️ [GEITje-chat demo](https://huggingface.co/spaces/Rijgersberg/GEITje-7B-chat)️
+[📄 English README](./README-en.md) | 🤖️ [GEITje-chat-v2 demo](https://huggingface.co/spaces/Rijgersberg/GEITje-7B-chat)️
 
 GEITje is een Nederlandstalig groot open taalmodel met 7 miljard parameters, gebaseerd op Mistral 7B.
 Het is (verder) getraind op 10 miljard tokens aan Nederlandstalige tekst.
 Daardoor heeft het beter Nederlands geleerd, en meer kennis over Nederlandse onderwerpen.
 
-![DALL·E 3: "Create a logo for a Dutch large language model's Github readme. Incorporate a cute baby goat painting a Dutch landscape."](./resources/geitje-logo.jpg)
 
+![DALL·E 3: "Create a logo for a Dutch large language model's Github readme. Incorporate a cute baby goat painting a Dutch landscape."](./resources/geitje-logo.jpg)
 
 📜 Licentie
 -----------
@@ -47,8 +47,8 @@ Net als Mistral heeft GEITje een _context length_ van 8.192 tokens.
 
 
 ### _GEITje-chat_ – Gefinetuned voor dialogen
-Als demonstratie voor de mogelijkheden voor chat-toepassingen van GEITje is er ook een eerste chat-variant van GEITje gefinetuned: GEITje-chat.
-GEITje-chat kan instructies opvolgen, vragen beantwoorden en dialogen houden over allerlei onderwerpen.
+Als demonstratie voor de mogelijkheden voor chat-toepassingen van GEITje zijn er ook twee chat-varianten van GEITje gefinetuned: GEITje-chat en GEITje-chat-v2.
+Ze kunnen instructies opvolgen, vragen beantwoorden en dialogen houden over allerlei onderwerpen.
 
 ### Varianten
 
@@ -56,13 +56,14 @@ GEITje-chat kan instructies opvolgen, vragen beantwoorden en dialogen houden ove
 |-------------|--------|------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | GEITje      | v1     | 7B         | _foundation_ | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)                                                                                               | [Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1) |
 | GEITje-chat | v1     | 7B         | _chat_       | [GEITje-7B-chat](https://huggingface.co/Rijgersberg/GEITje-7B-chat) <br><small>([gguf](https://huggingface.co/Rijgersberg/GEITje-7B-chat-gguf))</small> | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
+| | v2     | 7B         | _chat_       | [GEITje-7B-chat-v2](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2)                                                                               | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
 
 
 🚀 Toepassing
 -------------
 
 ### Demo
-Chat met GEITje-chat in de [demo](https://huggingface.co/spaces/Rijgersberg/GEITje-7B-chat) op 🤗 Hugging Face Spaces.
+Chat met GEITje-chat-v2 in de [demo](https://huggingface.co/spaces/Rijgersberg/GEITje-7B-chat) op 🤗 Hugging Face Spaces.
 
 
 ### 🤗 Transformers
@@ -72,7 +73,7 @@ GEITje is het beste te gebruiken met [🤗 Hugging Face Transformers](https://hu
 from transformers import pipeline, Conversation
 
 
-chatbot = pipeline(task='conversational', model='Rijgersberg/GEITje-7B-chat',
+chatbot = pipeline(task='conversational', model='Rijgersberg/GEITje-7B-chat-v2',
                    device_map='auto')
 
 print(chatbot(
@@ -91,7 +92,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-model_name = 'Rijgersberg/GEITje-7B-chat'
+model_name = 'Rijgersberg/GEITje-7B-chat-v2'
 model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.bfloat16,
                                              low_cpu_mem_usage=True, use_flash_attention_2=True,
                                              device_map=device)
@@ -174,22 +175,28 @@ Recent is wel een leaderboard gestart voor prestaties van LLMs in het Nederlands
 Het [Open Dutch LLM Evaluation Leaderboard](https://huggingface.co/spaces/BramVanroy/open_dutch_llm_leaderboard).
 Deze gebruikt vier (automatisch uit het Engels vertaalde) datasets uit het [Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness).
 
+Ik heb daar deze vier modellen op geëvalueerd:
+
+| Modelnaam                                                                             | Bronmodel       | Doorgetraind op                | Gefinetuned op                                                                                                                                                                                                              |
+|---------------------------------------------------------------------------------------|-----------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)                             | mistral-7b-v0.1 | - GigaCorpusNL<br>- MADLAD-400 |                                                                                                                                                                                                                             |
+| [Mistral-7B-v0.1-chat-nl](https://huggingface.co/Rijgersberg/Mistral-7B-v0.1-chat-nl) | mistral-7b-v0.1 |                                | - [no_robots_nl](https://huggingface.co/datasets/Rijgersberg/no_robots_nl)<br>- [ultrachat_10k_nl](https://huggingface.co/datasets/Rijgersberg/ultrachat_10k_nl)                                                                                                                                                                                        |
+| [GEITje-7B-chat](https://huggingface.co/Rijgersberg/GEITje-7B-chat)                   | mistral-7b-v0.1 | - GigaCorpusNL<br>- MADLAD-400 | - [no_robots_nl](https://huggingface.co/datasets/Rijgersberg/no_robots_nl)<br>- [ultrachat_10k_nl](https://huggingface.co/datasets/Rijgersberg/ultrachat_10k_nl)                                                                                                                                                                                       |
+| [GEITje-7B-chat-v2](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2)             | mistral-7b-v0.1 | - GigaCorpusNL<br>- MADLAD-400 | - [no_robots_nl](https://huggingface.co/datasets/Rijgersberg/no_robots_nl)<br>- [ultrachat_10k_nl](https://huggingface.co/datasets/Rijgersberg/ultrachat_10k_nl)<br>- [dutch_chat_datasets](https://huggingface.co/datasets/BramVanroy/dutch_chat_datasets) |
+
 Hieronder volgt een momentopname van december 2023.
 Door mij getrainde modellen zijn _schuin_ weergegeven.
-
-- **GEITje** = mistral-7b-v0.1 + doortrainen op GigaCorpusNL & MADLAD-400 
-- **GEITje-chat** = mistral-7b-v0.1 + doortrainen op GigaCorpusNL & MADLAD-400 + finetunen op no_robots_nl & ultrachat_10k_nl
-- **mistral-7b-v0.1-chat-nl** = mistral-7b-v0.1 + finetunen op no_robots_nl & ultrachat_10k_nl
 
 | Model                             | Gemiddeld | ARC      | HellaSwag | MMLU     | TruthfulQA |
 |-----------------------------------|-----------|----------|-----------|----------|------------|
 | zephyr-7b-beta                    | **0.49**  | 0.43     | 0.58      | **0.43** | **0.53**   |
-| _mistral-7b-v0.1-chat-nl_         | 0.48      | 0.42     | 0.63      | 0.37     | 0.49       |
-| _GEITje-7B-chat_                  | 0.47      | 0.42     | **0.66**  | 0.34     | 0.47       |
+| _mistral-7b-v0.1-chat-nl_*        | 0.48      | 0.42     | 0.63      | 0.37     | 0.49       |
+| _GEITje-7B-chat_                  | 0.47      | 0.42     | **0.67**  | 0.33     | 0.46       |
 | neural-chat-7b-v3-1               | 0.47      | **0.43** | 0.58      | 0.34     | 0.51       |
+| _GEITJE-7B-chat-v2_*              | 0.46      | 0.42     | 0.65      | 0.33     | 0.45       |
 | mistral-7b-v0.1                   | 0.46      | 0.42     | 0.58      | 0.37     | 0.45       |
-| _GEITje-7B_                       | 0.45      | 0.39     | 0.65      | 0.32     | 0.44       |
 | orca-2-13b                        | 0.45      | 0.42     | 0.54      | 0.37     | 0.50       |
+| _GEITje-7B_                       | 0.45      | 0.38     | 0.65      | 0.32     | 0.43       |
 | llama-2-13b-chat-hf               | 0.44      | 0.41     | 0.55      | 0.37     | 0.43       |
 | llama2-13b-ft-mc4_nl_cleaned_tiny | 0.44      | 0.40     | 0.58      | 0.35     | 0.42       |
 | llama-2-13b-chat-dutch            | 0.43      | 0.38     | 0.56      | 0.35     | 0.44       |
@@ -203,6 +210,7 @@ Maar dit heeft blijkbaar niet tot betere resulaten geleid in de overige benchmar
 
 **Opmerking**: pas na het draaien van de evaluaties kwam ik erachter dat het Open Dutch LLM Evaluation Leaderboard alle modellen in 8-bit-modus evalueert.
 Ik heb mijn modellen in `bfloat16` geevalueerd, dus de resultaten zijn mogelijk niet vergelijkbaar.
+Deze evaluaties zijn met een asterisk* gemarkeerd.
 Zodra de GEITje-modellen officieel zijn opgenomen in het leaderboard zal ik bovenstaande tabel updaten met de scores.
 
 ### DUMB: A Benchmark for Smart Evaluation of Dutch Models
@@ -315,6 +323,7 @@ $ python3 finetune.py
 
 ### Trainingsverloop
 
+#### GEITje-chat
 GEITje-chat is 3 epochs getraind.
 Om het effect van de pretraining te onderzoeken heb ik ook het basismodel Mistral 7B v0.1 exact dezelfde training laten ondergaan.
 Dit model noem ik [Mistral-7B-v0.1-chat-nl](https://huggingface.co/Rijgersberg/Mistral-7B-v0.1-chat-nl).
@@ -323,6 +332,14 @@ Voor meer details over het finetunen, zie het [rapport](https://api.wandb.ai/lin
 of de loss-grafiek hieronder.
 
 ![Loss during finetuning of GEITje-7B-chat vs Mistral-7B-v0.1-chat-nl](./resources/finetuning-loss.png)
+
+#### GEITje-chat-v2
+GEITje-chat-v2 is getraind op dezelfde dataset als v1,
+maar aangevuld met [BramVanroy/dutch_chat_datasets](https://huggingface.co/datasets/BramVanroy/dutch_chat_datasets).
+
+Er is getrained op één epoch. Zie de loss-grafiek hieronder.
+
+![Loss during finetuning of GEITje-7B-chat-v2](./resources/finetuning-v2-loss.png)
 
 
 🧮 Compute
@@ -333,8 +350,8 @@ met een geschat energieverbruik van 350 kWh.
 Ter vergelijking: het vanaf niets trainen van Llama 2 7B door Meta gebruikte [184.320](https://arxiv.org/abs/2307.09288) GPU-uur
 en kostte ongeveer 74.000 kWh.
 
-GEITje-chat is getraind in de cloud van [RunPod](https://www.runpod.io), op een instance met 1x NVIDIA A100 80GB.
-Trainen nam 10,5 GPU-uur in beslag,
+GEITje-chat en GEITje-chat-v2 zijn beiden getraind in de cloud van [RunPod](https://www.runpod.io), op een instance met 1x NVIDIA A100 80GB.
+Trainen nam 10,5 GPU-uur per stuk in beslag,
 met een geschat energieverbruik van 5 kWh.
 
 
