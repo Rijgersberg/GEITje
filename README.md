@@ -6,6 +6,7 @@ GEITje is een Nederlandstalig groot open taalmodel met 7 miljard parameters, geb
 Het is (verder) getraind op 10 miljard tokens aan Nederlandstalige tekst.
 Daardoor heeft het beter Nederlands geleerd, en meer kennis over Nederlandse onderwerpen.
 
+**Update 18 december 2023**: GEITje-7B-chat-v2 vrijgegeven, getraind op flink meer vertaalde chatgesprekken.
 
 ![DALL·E 3: "Create a logo for a Dutch large language model's Github readme. Incorporate a cute baby goat painting a Dutch landscape."](./resources/geitje-logo.jpg)
 
