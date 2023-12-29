@@ -120,6 +120,15 @@ print(generate(conversation))
 # Het woord dat niet op zijn plaats staat is 'geit'. Een geit zou niet tussen een lijst van vervoersmiddelen moeten staan. Het past beter bij een boerderijthema of dierenlijst.
 ```
 
+
+### LMStudio
+Je kunt GEITje ook gebruik met [LM Studio](https://lmstudio.ai).
+1. Gebruik de ingebouwde zoekfunctie om een model te downloaden, bijvoorbeeld `Rijgersberg/GEITje-7B-chat-v2-gguf`.
+2. Gebruik de **Zephyr**-preset voor de correcte instellingen
+3. Zet de `temperature` rond de 0.2 voor de beste gebruikservaring.
+
+![LM Studio screenshot](./resources/LM-Studio.png)
+
 ### Ollama
 GEITje werkt ook met [Ollama](https://ollama.ai).
 
