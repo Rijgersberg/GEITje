@@ -1,0 +1,17 @@
+FROM GEITje-7B-chat-v2.gguf
+TEMPLATE """{{- if .System }}
+<|system|>
+{{ .System }}
+</s>
+{{- end }}
+<|user|>
+{{ .Prompt }}
+</s>
+<|assistant|>
+"""
+PARAMETER temperature 0.2
+PARAMETER num_ctx 8192
+PARAMETER stop "<|system|>"
+PARAMETER stop "<|user|>"
+PARAMETER stop "<|assistant|>"
+PARAMETER stop "</s>"

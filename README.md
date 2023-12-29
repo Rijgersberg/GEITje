@@ -120,6 +120,20 @@ print(generate(conversation))
 # Het woord dat niet op zijn plaats staat is 'geit'. Een geit zou niet tussen een lijst van vervoersmiddelen moeten staan. Het past beter bij een boerderijthema of dierenlijst.
 ```
 
+### Ollama
+GEITje werkt ook met [Ollama](https://ollama.ai).
+
+1. Download een gguf-variant van GEITje, bijvoorbeeld [GEITje-7B-chat-v2.gguf](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2-gguf/tree/main).
+2. Kopieer de [Modelfile](./ollama/Modelfile) uit deze repo.
+3. Maak er een Ollama-model van: `$ ollama create GEITje-7B-chat-v2 -f Modelfile`
+4. Draai het model in Ollama:
+```console
+$ ollama run GEITje-7B-chat-v2
+>>> Vraagje: welk woord hoort er niet in dit rijtje thuis: "auto, vliegtuig, geit, bus"?
+Geit hoort niet in het rijtje thuis. De andere drie zijn voertuigen.
+```
+
+
 ### Veiligheid en inzet in productie
 GEITje is een [_foundation model_](https://en.wikipedia.org/wiki/Foundation_models).
 Het model is getraind om teksten af te maken en is niet geoptimaliseerd voor dialoogtoepassingen.
