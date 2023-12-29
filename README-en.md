@@ -66,6 +66,7 @@ They can follow instructions, answer questions, and hold dialogues on a variety 
 
 ### Demo
 Chat with GEITje-chat-v2 in the [demo](https://huggingface.co/spaces/Rijgersberg/GEITje-7B-chat) on 🤗 Hugging Face Spaces.
+![GEITje-chat Hugging Face Space screenshot](./resources/HF-chat-space.png)
 
 
 ### 🤗 Transformers

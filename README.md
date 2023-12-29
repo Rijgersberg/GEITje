@@ -65,7 +65,7 @@ Ze kunnen instructies opvolgen, vragen beantwoorden en dialogen houden over alle
 
 ### Demo
 Chat met GEITje-chat-v2 in de [demo](https://huggingface.co/spaces/Rijgersberg/GEITje-7B-chat) op 🤗 Hugging Face Spaces.
-
+![GEITje-chat Hugging Face Space screenshot](./resources/HF-chat-space.png)
 
 ### 🤗 Transformers
 GEITje is het beste te gebruiken met [🤗 Hugging Face Transformers](https://huggingface.co/docs/transformers/index).
