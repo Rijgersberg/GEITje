@@ -121,7 +121,7 @@ print(generate(conversation))
 ```
 
 
-### LMStudio
+### LM Studio
 Je kunt GEITje ook gebruiken met [LM Studio](https://lmstudio.ai).
 1. Gebruik de ingebouwde zoekfunctie om een model te downloaden, bijvoorbeeld `Rijgersberg/GEITje-7B-chat-v2-gguf`.
 2. Gebruik de **Zephyr**-preset voor de correcte instellingen.

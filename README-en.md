@@ -123,7 +123,7 @@ print(generate(conversation))
 ```
 
 
-## LMStudio
+## LM Studio
 You can also use GEITje with [LM Studio](https://lmstudio.ai).
 1. Use the built-in search to find a model — for example `Rijgersberg/GEITje-7B-chat-v2-gguf`.
 2. Use the **Zephyr**-preset for the correct settings.
