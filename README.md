@@ -124,7 +124,7 @@ print(generate(conversation))
 ### LMStudio
 Je kunt GEITje ook gebruiken met [LM Studio](https://lmstudio.ai).
 1. Gebruik de ingebouwde zoekfunctie om een model te downloaden, bijvoorbeeld `Rijgersberg/GEITje-7B-chat-v2-gguf`.
-2. Gebruik de **Zephyr**-preset voor de correcte instellingen
+2. Gebruik de **Zephyr**-preset voor de correcte instellingen.
 3. Zet de `temperature` rond de 0.2 voor de beste gebruikservaring.
 
 ![LM Studio screenshot](./resources/LM-Studio.png)
@@ -134,7 +134,7 @@ GEITje werkt ook met [Ollama](https://ollama.ai).
 
 1. Download een gguf-variant van GEITje, bijvoorbeeld [GEITje-7B-chat-v2.gguf](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2-gguf/tree/main).
 2. Kopieer de [Modelfile](./ollama/Modelfile) uit deze repo.
-3. Maak er een Ollama-model van: `$ ollama create GEITje-7B-chat-v2 -f Modelfile`
+3. Maak er een Ollama-model van: `$ ollama create GEITje-7B-chat-v2 -f Modelfile`.
 4. Draai het model in Ollama:
 ```console
 $ ollama run GEITje-7B-chat-v2

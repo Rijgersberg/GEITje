@@ -136,7 +136,7 @@ GEITje also works with [Ollama](https://ollama.ai).
 
 1. Download a gguf variant of GEITje, for example [GEITje-7B-chat-v2.gguf](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2-gguf/tree/main).
 2. Copy the [Modelfile](./ollama/Modelfile) from this repo.
-3. Create an Ollama model: `$ ollama create GEITje-7B-chat-v2 -f Modelfile`
+3. Create an Ollama model: `$ ollama create GEITje-7B-chat-v2 -f Modelfile`.
 4. Run the model in Ollama:
 ```console
 $ ollama run GEITje-7B-chat-v2
