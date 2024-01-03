@@ -25,7 +25,7 @@ Heb je iets gaafs gemaakt met GEITje? Ik hoor het graag!
 Stuur me een [mail](mailto:edwin@edwinrijgersberg.nl) of een bericht op [Twitter](https://twitter.com/E_Rijgersberg) of [Mastodon](https://mastodon.social/@rijgersberg).
 Of open een issue hier op GitHub natuurlijk.
 
-Meer achtergrond over de totstandkoming van GEITje kan je (binnenkort) vinden op mijn blog: [GoingDutch.ai](https://goingdutch.ai).
+Meer achtergrond over de totstandkoming van GEITje kan je vinden op mijn blog: [GoingDutch.ai](https://goingdutch.ai).
 
 
 🤖 Model
