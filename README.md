@@ -392,6 +392,7 @@ Je teksten kunnen opgedeeld worden in meer tokens dan je misschien gewend bent.
 ![Tokenization by gpt2-small-dutch](resources/tokenizer-gpt2-dutch.png)
 
 Visualisaties door [Tokenwiz](https://tokenwiz.rahul.gs).
+Voor meer vergelijkingen tussen tokenizers voor het Nederlands heeft [Yeb Havinga](https://github.com/yhavinga) onlangs de [Dutch Tokenizer Arena](https://huggingface.co/spaces/yhavinga/dutch-tokenizer-arena) gemaakt!
 
 
 💐 Dankwoord

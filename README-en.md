@@ -394,6 +394,7 @@ Your texts might be split into more tokens than you might be used to.
 ![Tokenization by gpt2-small-dutch](resources/tokenizer-gpt2-dutch.png)
 
 Visualizations by [Tokenwiz](https://tokenwiz.rahul.gs).
+For more comparisons between tokenizers for Dutch: [Yeb Havinga](https://github.com/yhavinga) has recently made the [Dutch Tokenizer Arena](https://huggingface.co/spaces/yhavinga/dutch-tokenizer-arena)!
 
 
 💐 Acknowledgements
