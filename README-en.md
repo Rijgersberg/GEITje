@@ -6,7 +6,9 @@ GEITje is a large open Dutch language model with 7 billion parameters, based on 
 It has been further trained on 10 billion tokens of Dutch text.
 This has improved its Dutch language skills and increased its knowledge of Dutch topics.
 
-**Update 18 December 2023**: Release of GEITje-7B-chat-v2, trained on a lot more translated chat conversations.
+**Update 18 December 2023**: Release of GEITje-7B-chat-v2, trained on a lot more translated chat conversations.<br>
+**Update 4 February 2024**: Bram Vanroy has made [GEITJE-7B-ultra](https://huggingface.co/BramVanroy/GEITje-7B-ultra): a superior chatbot, trained on more chat data using DPO.
+
 
 ![DALL·E 3: "Create a logo for a Dutch large language model's Github readme. Incorporate a cute baby goat painting a Dutch landscape."](./resources/geitje-logo.jpg)
 
@@ -54,11 +56,12 @@ They can follow instructions, answer questions, and hold dialogues on a variety 
 
 ### Variants
 
-| Model       | Version | Parameters | Type         | Link to 🤗 Hugging Face Models                                                                                                                                                                                                                                                | Based on                                                            |
-|-------------|---------|------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| GEITje      | v1      | 7B         | _foundation_ | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)                                                                                                                                                                                                                     | [Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1) |
-| GEITje-chat | v1      | 7B         | _chat_       | [GEITje-7B-chat](https://huggingface.co/Rijgersberg/GEITje-7B-chat)  <br><small>([gguf](https://huggingface.co/TheBloke/GEITje-7B-chat-GGUF), [gptq](https://huggingface.co/TheBloke/GEITje-7B-chat-GPTQ), [awq](https://huggingface.co/TheBloke/GEITje-7B-chat-AWQ))</small> | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
-|             | v2      | 7B         | _chat_       | [GEITje-7B-chat-v2](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2) <br><small>([gguf](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2-gguf))</small>                                                                                                              | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
+| Model                                                       | Parameters | Type             | Link to 🤗 Hugging Face Models                                                                                                                                                                                                                                                | Based on                                                            |
+|-------------------------------------------------------------|------------|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| GEITje                                                      | 7B         | _foundation_     | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)                                                                                                                                                                                                                     | [Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1) |
+| GEITje-chat                                                 | 7B         | _chat SFT_       | [GEITje-7B-chat](https://huggingface.co/Rijgersberg/GEITje-7B-chat)  <br><small>([gguf](https://huggingface.co/TheBloke/GEITje-7B-chat-GGUF), [gptq](https://huggingface.co/TheBloke/GEITje-7B-chat-GPTQ), [awq](https://huggingface.co/TheBloke/GEITje-7B-chat-AWQ))</small> | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
+|                                                             | 7B         | _chat SFT_       | [GEITje-7B-chat-v2](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2) <br><small>([gguf](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2-gguf))</small>                                                                                                              | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
+| GEITje-ultra*<br><small>*contributed by Bram Vanroy</small> | 7B         | _chat SFT + DPO_ | [BramVanroy/GEITje-7B-ultra](https://huggingface.co/BramVanroy/GEITje-7B-ultra)                                                                                                                                                                                               | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
 
 
 🚀 Usage
