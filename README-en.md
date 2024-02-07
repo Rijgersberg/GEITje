@@ -50,9 +50,10 @@ It is not a [PEFT](https://huggingface.co/blog/peft) or [LoRA](https://huggingfa
 Like Mistral, GEITje has a _context length_ of 8,192 tokens.
 
 
-### _GEITje-chat_ – Finetuned for Dialogues
+### _GEITje-chat_ and _GEITje-ultra_ – Finetuned for Dialogues
 As a demonstration of GEITje's capabilities for chat applications, two initial chat variants of GEITje have also been finetuned: GEITje-chat and GEITje-chat-v2.
 They can follow instructions, answer questions, and hold dialogues on a variety of topics.
+GEITje-ultra is a more advanced chatbot, trained on more data and optimized for dialogues with _Direct Preference Optimization_.
 
 ### Variants
 
@@ -61,7 +62,7 @@ They can follow instructions, answer questions, and hold dialogues on a variety 
 | GEITje                                                                                       | 7B         | _foundation_     | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)                                                                                                                                                                                                                     | [Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1) |
 | GEITje-chat                                                                                  | 7B         | _chat SFT_       | [GEITje-7B-chat](https://huggingface.co/Rijgersberg/GEITje-7B-chat)  <br><small>([gguf](https://huggingface.co/TheBloke/GEITje-7B-chat-GGUF), [gptq](https://huggingface.co/TheBloke/GEITje-7B-chat-GPTQ), [awq](https://huggingface.co/TheBloke/GEITje-7B-chat-AWQ))</small> | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
 |                                                                                              | 7B         | _chat SFT_       | [GEITje-7B-chat-v2](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2) <br><small>([gguf](https://huggingface.co/Rijgersberg/GEITje-7B-chat-v2-gguf))</small>                                                                                                              | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
-| GEITje-ultra*<br><small>*contributed by [Bram Vanroy](https://github.com/BramVanroy)</small> | 7B         | _chat SFT + DPO_ | [BramVanroy/GEITje-7B-ultra](https://huggingface.co/BramVanroy/GEITje-7B-ultra)                                                                                                                                                                                               | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
+| GEITje-ultra*<br><small>*contributed by [Bram Vanroy](https://github.com/BramVanroy)</small> | 7B         | _chat SFT + DPO_ | [BramVanroy/GEITje-7B-ultra](https://huggingface.co/BramVanroy/GEITje-7B-ultra)  <br><small>([gguf](https://huggingface.co/s3nh/GEITje-7B-ultra-GGUF))</small>                                                                                                                | [GEITje-7B](https://huggingface.co/Rijgersberg/GEITje-7B)️          |
 
 
 🚀 Usage
