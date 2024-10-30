@@ -419,6 +419,27 @@ Hopelijk kan GEITje een voorbeeld zijn van wat er mogelijk is met open source.
 Ga je zelf ook met grote taalmodellen aan de slag, en ben je van plan het grootser aan te pakken dan GEITje?
 Neem dan vooral [contact op](mailto:edwin@edwinrijgersberg.nl)!
 
+🔬 Gebruik van GEITje-7B in de wetenschap
+-----------------------------------------
+GEITje-7B, of een van de afgeleide modellen, zijn gebruikt in de volgende wetenschappelijke werken:
+
+- Vanroy, Bram. "Language resources for Dutch large language modelling." _arXiv preprint arXiv:2312.12852_ (2023).
+- Terryn, Ayla Rigouts, and Miryam de Lhoneux. "Exploratory Study on the Impact of English Bias of Generative Large Language Models in Dutch and French." _Proceedings of the Fourth Workshop on Human Evaluation of NLP Systems (HumEval)@ LREC-COLING 2024_. 2024.
+- Suijkerbuijk, Michelle, et al. "BLiMP-NL."
+- Sinnaeve, Wout, Orphée De Clercq, and Joni Kruijsbergen. "Controlled Text Simplification for Dutch Using Generative Large Language Models."
+- Snoeij, C. AI for GovTech - Exploring the use of LLMs for GovTech Benchmark Operationalization. _Master Thesis, Delft University of Technology_, 2024. 
+- Bakker, Femke. Assessing Large Language Models for Accurate Long Dutch Document Classification. _Master Thesis, University of Amsterdam_, 2024.
+- Rogiers, Alexander, et al. "KamerRaad: Enhancing Information Retrieval in Belgian National Politics Through Hierarchical Summarization and Conversational Interfaces." _Joint European Conference on Machine Learning and Knowledge Discovery in Databases_. Cham: Springer Nature Switzerland, 2024.
+- Weering, Sanne, and Tommaso Caselli. "FC_RUG at CheckThat! 2024: few-shot learning using GEITje for check-worthiness detection in Dutch." _25th Working Notes of the Conference and Labs of the Evaluation Forum, CLEF 2024_. CEUR Workshop Proceedings (CEUR-WS. org), 2024.
+- Thakkar, Gaurish, et al. "Building a Large Language Model for Moderately Resourced Language: A Case of Croatian." _35th International Scientific Conference Central European Conference on Information and Intelligent Systems Proceedings_. Fakultet organizacije i informatike;, 2024.
+- Jain, Devansh, et al. "PolygloToxicityPrompts: Multilingual Evaluation of Neural Toxic Degeneration in Large Language Models." _arXiv preprint arXiv:2405.09373_ (2024).
+- Redelaar, F., et al. "Attributed Question Answering for the Dutch Law using Retrieval augmented Large language models", _The 34th Meeting of Computational Linguistics in The Netherlands_, 2024.
+- Debaene, F., et al. "Do we still need specialized transformers? A comparison to generative foundation models for non-normative Dutch", _The 34th Meeting of Computational Linguistics in The Netherlands_, 2024.
+- Sinnaeve, W., et al. "Controlled Text Simplification for Dutch using Generative Large Language Models", _The 34th Meeting of Computational Linguistics in The Netherlands_, 2024.
+- Chen, S., et al. "Automated Pass/Fail Classification for Dutch as a Second Language Using Large Language Models", _The 34th Meeting of Computational Linguistics in The Netherlands_, 2024.
+- Grotti, L. "Evaluating Grapheme-to-Phoneme Conversion and Syllable Counting of Large Language Models for Dutch", _The 34th Meeting of Computational Linguistics in The Netherlands_, 2024.
+- Noels, Sander, Jorne De Blaere, and Tijl De Bie. "A Dutch Financial Large Language Model." _arXiv preprint arXiv:2410.12835_ (2024).
+
 📎 Referentie
 -------------
 Als je gebruik maakt van GEITje kan je de volgende referentie gebruiken:
