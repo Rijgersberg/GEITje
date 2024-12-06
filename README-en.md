@@ -442,6 +442,7 @@ GEITje-7B, or one of its derivative models, have been used in the following scie
 - Chen, S., et al. "Automated Pass/Fail Classification for Dutch as a Second Language Using Large Language Models", _The 34th Meeting of Computational Linguistics in The Netherlands_, 2024.
 - Grotti, L. "Evaluating Grapheme-to-Phoneme Conversion and Syllable Counting of Large Language Models for Dutch", _The 34th Meeting of Computational Linguistics in The Netherlands_, 2024.
 - Noels, Sander, Jorne De Blaere, and Tijl De Bie. "A Dutch Financial Large Language Model." _arXiv preprint arXiv:2410.12835_ (2024).
+- Vanroy, Bram. "GEITje 7B Ultra: A Conversational Model for Dutch." _arXiv preprint arXiv:2412.04092_ (2024).
 
 
 📎 Reference
