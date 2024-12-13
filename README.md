@@ -440,6 +440,7 @@ GEITje-7B, of een van de afgeleide modellen, zijn gebruikt in de volgende wetens
 - Grotti, L. "Evaluating Grapheme-to-Phoneme Conversion and Syllable Counting of Large Language Models for Dutch", _The 34th Meeting of Computational Linguistics in The Netherlands_, 2024.
 - Noels, Sander, Jorne De Blaere, and Tijl De Bie. "A Dutch Financial Large Language Model." _arXiv preprint arXiv:2410.12835_ (2024).
 - Vanroy, Bram. "GEITje 7B Ultra: A Conversational Model for Dutch." _arXiv preprint arXiv:2412.04092_ (2024).
+- Meeus, M., Rathé, A., Remy, F., Delobelle, P., Decorte, J. J., & Demeester, T. "ChocoLlama: Lessons Learned From Teaching Llamas Dutch." _arXiv preprint arXiv:2412.07633_ (2024).
 
 
 📎 Referentie
